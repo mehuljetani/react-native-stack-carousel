@@ -1,15 +1,28 @@
 {
   "name": "react-native-stack-carousel",
   "version": "1.0.1",
-  "author": "",
+  "author": "mehuljetani",
   "main": "./src/index.ts",
-  "description": "",
-  "directories": {
-    "example": "example"
-  },
+  "keywords": [
+    "react-native",
+    "react-native-carousel",
+    "react-native-stack-carousel",
+    "react-native-carousel-stack",
+    "react-native-stack-animation",
+    "react-native-swiper-flatlist"
+  ],
+  "description": "A React Native component for creating an animated stack carousel with customizable directions and gestures.",
   "license": "ISC",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "echo Building package..."
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mehuljetani/react-native-stack-carousel"
+  },
+  "bugs": {
+    "url": "https://github.com/mehuljetani/react-native-stack-carousel/issues"
+  },
+  "homepage": "https://github.com/mehuljetani/react-native-stack-carousel#readme"
 }

@@ -1,0 +1,15 @@
+{
+  "name": "react-native-stack-carousel",
+  "version": "1.0.0",
+  "author": "",
+  "main": "./src/index.ts",
+  "description": "",
+  "directories": {
+    "example": "example"
+  },
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo Building package..."
+  }
+}

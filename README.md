@@ -88,10 +88,10 @@ export default App;
 
   <h2>Demo</h2>
   <p>Check out the demo of the component in action:</p>
-  <img src="./src/assets/horizontalLeft.gif" alt="Demo GIF" loading="lazy" style="width: 160px; height: auto;">
-  <img src="./src/assets/horizontalRight.gif" alt="Demo GIF" loading="lazy" style="width: 160px; height: auto;">
-  <img src="./src/assets/verticalBottom.gif" alt="Demo GIF" loading="lazy" style="width: 160px; height: auto;">
-  <img src="./src/assets/verticalTop.gif" alt="Demo GIF" loading="lazy" style="width: 160px; height: auto;">
+  <img src="https://i.ibb.co/W37hX4t/horizontal-Left.gif" alt="Demo GIF" loading="lazy" style="width: 160px; height: auto;">
+  <img src="https://i.ibb.co/yQbsn7d/horizontal-Right.gif" alt="Demo GIF" loading="lazy" style="width: 160px; height: auto;">
+  <img src="https://i.ibb.co/WncDNGH/vertical-Bottom.gif" alt="Demo GIF" loading="lazy" style="width: 160px; height: auto;">
+  <img src="https://i.ibb.co/1rxB4Fv/vertical-Top.gif" alt="Demo GIF" loading="lazy" style="width: 160px; height: auto;">
   <br>
 
   <h2>Props</h2>

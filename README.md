@@ -88,10 +88,10 @@ export default App;
 
   <h2>Demo</h2>
   <p>Check out the demo of the component in action:</p>
-  <img src="./src/assets/horizontalLeft.gif" alt="Demo GIF" loading="lazy" style="width: 160px; height: auto;">
-  <img src="./src/assets/horizontalRight.gif" alt="Demo GIF" loading="lazy" style="width: 160px; height: auto;">
-  <img src="./src/assets/verticalBottom.gif" alt="Demo GIF" loading="lazy" style="width: 160px; height: auto;">
-  <img src="./src/assets/verticalTop.gif" alt="Demo GIF" loading="lazy" style="width: 160px; height: auto;">
+  <img src="https://miro.medium.com/v2/resize:fit:438/format:webp/1*uiKT6Dq0cdx0_as42dMLvw.gif" alt="Demo GIF" loading="lazy" style="width: 160px; height: auto;">
+  <img src="https://miro.medium.com/v2/resize:fit:438/format:webp/1*ulg-IbR0xPPBhJJpmpU3dg.gif" alt="Demo GIF" loading="lazy" style="width: 160px; height: auto;">
+  <img src="https://miro.medium.com/v2/resize:fit:438/format:webp/1*mGJk9-kJYTRaDBDovdKvPg.gif" alt="Demo GIF" loading="lazy" style="width: 160px; height: auto;">
+  <img src="https://miro.medium.com/v2/resize:fit:438/format:webp/1*3r-omLs1ADu-eEw4QsBiTg.gif" alt="Demo GIF" loading="lazy" style="width: 160px; height: auto;">
   <br>
 
   <h2>Props</h2>

@@ -65,11 +65,24 @@ const App = () => {
 
   return (
     <View style={styles.container}>
-      <Carousel
-        data={IMAGES}
-        maxVisibleItems={6}
-        direction="vertical-top-variant1"
-      />
+      {IMAGES.map((item, index) => (
+        <Carousel
+          item={item}
+          index={index}
+          key={item.id}
+          maxVisibleItems={6}
+          prevIndex={prevIndex}
+          dataLength={IMAGES.length}
+          currentIndex={currentIndex}
+          animatedValue={animatedValue}
+          imageStyle={styles.imageStyle}
+          direction="vertical-top-variant2"
+        >
+          <View style={styles.textContainer}>
+            <Text style={styles.text}>{item?.value}</Text>
+          </View>
+        </Carousel>
+      ))}
     </View>
   );
 };

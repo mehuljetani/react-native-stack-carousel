@@ -1,4 +1,7 @@
+import { ReactNode } from "react";
+
 import { ImageSourcePropType, ImageStyle } from "react-native";
+
 import { SharedValue } from "react-native-reanimated";
 
 export interface DataItem {
@@ -26,6 +29,7 @@ export interface StackCarouselProps {
 export interface CarouselProps {
   index: number;
   dataLength: number;
+  children?: ReactNode;
   imageStyle?: ImageStyle;
   maxVisibleItems: number;
   direction: DirectionType;

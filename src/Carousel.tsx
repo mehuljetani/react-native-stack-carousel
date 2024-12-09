@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet } from "react-native";
+import { StyleSheet, ImageBackground, View } from "react-native";
 
 import Animated, {
   withTiming,
@@ -19,6 +19,7 @@ const Carousel: React.FC<CarouselProps> = ({
   item,
   index,
   prevIndex,
+  children,
   imageStyle,
   dataLength,
   currentIndex,
@@ -110,8 +111,8 @@ const Carousel: React.FC<CarouselProps> = ({
         index < currentIndex.value + maxVisibleItems - 1
           ? opacity
           : index === currentIndex.value + maxVisibleItems - 1
-          ? withTiming(1)
-          : withTiming(0),
+            ? withTiming(1)
+            : withTiming(0),
     };
   });
 
@@ -166,9 +167,9 @@ const Carousel: React.FC<CarouselProps> = ({
           direction?.includes("horizontal") ? onFlingRight : onFlingDown
         }
       >
-        <Animated.Image
+        <Animated.View
           style={[
-            styles.image,
+            styles.imageBackgroundWrapper,
             {
               width: IMAGE_WIDTH,
               height: IMAGE_HEIGHT,
@@ -177,8 +178,14 @@ const Carousel: React.FC<CarouselProps> = ({
             animatedStyle,
             imageStyle,
           ]}
-          source={typeof item.uri === "string" ? { uri: item.uri } : item.uri}
-        />
+        >
+          <ImageBackground
+            style={styles.imageBackground}
+            source={typeof item.uri === "string" ? { uri: item.uri } : item.uri}
+          >
+            {children}
+          </ImageBackground>
+        </Animated.View>
       </FlingGestureHandler>
     </FlingGestureHandler>
   );
@@ -187,8 +194,13 @@ const Carousel: React.FC<CarouselProps> = ({
 export default Carousel;
 
 const styles = StyleSheet.create({
-  image: {
+  imageBackgroundWrapper: {
     borderRadius: 20,
+    overflow: 'hidden',
     position: "absolute",
+  },
+  imageBackground: {
+    flex: 1,
+    borderRadius: 20,
   },
 });
